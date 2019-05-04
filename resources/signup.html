@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grandma's Lemon Meringue Pie
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet"
+              type = "text/css"
+              href = "nerdluv.css" />
+    </head>
+    <body>
+
+        <form action="thanks.html" method="post">
+            <fieldset>
+                <legend>New User Signup:</legend>
+                <div>
+                    <label class="left">Name:</label>
+                    <label class="right"><input type="text" maxlength="16" name="name"/></label><br>
+
+                    <label class="left"> Gender: </label>
+                    <label class="right"><input type="radio" name="gender" value="Male" checked="checked" /> Male</label>
+
+                    <label class="right"><input type="radio" name="gender" value="mastercard" checked="checked"/> Female </label><br>
+                    <label class="left">Age: </label>
+                    <label class="right"> <input type="text" maxlength="2" size="6" name="age"><br> </label>
+                    <label class="left">Personality type:</label> 
+                    <label class="right"> <input type="text" maxlength="4" size="6" name="personality"> 
+                        (<a href="http://www.humanmetrics.com/cgi-win/jtypes2.asp"> Don't know your type?</a>)<br>
+                    </label>
+
+                    <label class="left"> Favorite OS: </label> 
+                    <label class="right">  <select name="favoriteos">
+                            <option selected value="Windows">Windows</option>
+                            <option value="Mac OS X">Mac OS X</option>
+                            <option  value="Linux">Linux</option>
+                        </select></label> <br>
+                    <label class="left">Seeking age: </label> 
+                    <label class="right"><input type="text" placeholder="min" name="min" maxlength="2" size="6"> to
+                        <input type="text" placeholder="max" name="max" maxlength="2" size="6"></label><br>
+                        <label class="left"><input type = "submit" value="Sign Up"></label>
+                </div>
+
+            </fieldset>
+        </form>
+
+    </body>
+</html>

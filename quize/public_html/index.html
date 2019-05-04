@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Quize 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <ol>
+            <li>What is the difference between a web server and a web container? </li>
+            <ul><li>Web server listens to requests from clients and provides a response.
+             Web container,however, manages the components such as Servlets</li></ul>
+            <li>What is a servlet?</li>
+            <ul><li>Servlet is a server side program which processes requests according to the requirements.</li></ul>
+            <li>How do web servers and web containers interact with servlets?</li>
+            <ul><li>Web server receives a request, web container passes the request to the
+              servlet after consulting the web descriptor</li></ul>
+            <li>Who creates request objects?</li>
+            <ul><li>Servlet container</li></ul>
+            
+            <li>What are the states in the servlet lifecycle?</li>
+            <ul><li>First, servlet class is loaded followed by instanitiation. Then,
+                the servlet calls service() method to process client's request before it is
+                terminated and garbage collected by JVM garbage collector</li></ul>
+            <li>Who calls init and when?</li>
+            <ul><li>By the servlet container and it is called once at the beginning of client's request</li></ul>
+            <li>Which of init, service, and doGet should you override?</li>
+            <ul><li>service and doGet</li></ul>
+            <li>In what sense are servlets multi-threaded?</li>
+            <ul><li>The servlet container creates multi-thread where each thread
+                excutes the service() method of a signle instance of servlet</li></ul>
+            <li>What are the implications of this for servlet instance variables?</li>
+            <ul><li>Poor implementation may lead to threadlocks</li></ul>
+
+        </ol>
+    </body>
+</html>

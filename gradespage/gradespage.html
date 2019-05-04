@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Retrieve your grade</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="http://mumstudents.org/params.php">
+            <h1>Retrieve your grade</h1>
+            <div class="a"> 
+
+                Full Name: <input type="text" name="fullName" value="Mulu Adhana"/> <br /><br />
+                ID: <input type="text" name="id"/><br /><br />
+
+                Select course:<select name="selectoseegrade">
+                    <option value="Algorithms">ALGS</option>
+                    <option value="Modern Web App">MWA</option>
+                    <option value="Web Programming App" selected>WAP</option>
+                    <option value="Web Programming Archi">WAA</option>
+                </select>
+                
+                <label><input type="radio" name="entry" value="Feb 2019" checked /> Feb 2019 </label>
+                <label> <input type="radio" name="entry" value="Feb 2018" /> Feb 2018 </label>
+                <label><input type="radio" name="entry" value="Feb 2017" /> Feb 2017 </label><br /><br />
+                
+                <label> <input type="checkbox" name="Agree" /> Agree to look grades of your own! </label><br /><br />
+                <input type="submit" value="Get Grade"/><br />
+
+            </div>
+        </form>
+    </body>
+</html>
