@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Quize 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <ol>
+            <li>Can post requests be bookmarked? What are the problems? </li>
+            <ul><li>No, they cannot mainly because all the form parameters will be lost</li></ul>
+            <li>What is the purpose of request dispatching?</li>
+            <ul><li>It receives requests from the client and sends them to any resource on the same server.</li></ul>
+            <li>What is the difference between redirect and request dispatch?</li>
+            <ul><li>In redirect, control can be redirect to resources to different servers or domains whereas using 
+                request dispatch, control can be forward to resources available within the server from where the call is made.</li></ul>
+            <li>What is an attribute ?</li>
+            <ul><li>An attribute is one that enables servlets to share information among themselves </li></ul>
+            
+            <li>What is the difference between attributes and parameters?</li>
+            <ul><li>Both enables to share informations sharing among servlets. However, parameters are read only whereas the 
+                attributes could be created, added, or removed.</li></ul>
+            <li>What are dangers of using attributes?</li>
+            <ul><li>It could lead to sharing sensitive information.</li></ul>
+            <li>What does it mean to say that http is stateless? Give an example of a stateful protocol.</li>
+            <ul><li>Http is stateless in the sense that once the request processing the complete, the parameter values are lost.
+                TCP protocol is stateful protocol.</li></ul>
+            <li>Give 5 different methods for maintaining state information (count each attribute scope as one method).</li>
+            <ul><li>request object, session object, application object, cookies, hidden form</li></ul>
+            <li>How long does a session last?</li>
+            <ul><li>For as long as the session timeout</li></ul>
+            <li>What is a cookie, and how long does a cookie last?</li>
+            <ul><li>Cookie is a text file stored on the client. Session cookies last for as long as the browser is open and persistent 
+                cookies last for as long as the maximum age.</li></ul>
+            <li> What is the purpose of URL rewriting?</li>
+            <ul><li>To alter the parameter values in the URL</li></ul>
+            <li> Why does the request attribute report ‘null’ for the maintaining state demo?</li>
+            <ul><li>If the request attribute reports null, that means that the request processing is complete and 
+                any second attempt to retain the value leads to null.</li></ul>
+
+        </ol>
+    </body>
+</html>
