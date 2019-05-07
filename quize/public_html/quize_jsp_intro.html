@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Quize 3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <ol>
+            <li>What is the main value of Java Server Pages? </li>
+            <ul><li>Using JSP, we avoid the need to write println with html tags.
+                    It also adds the flexiblity to change the presentation of the web page without the need to 
+                    make changes to the other connected parts.</li></ul>
+            <li>How are JSP pages related to servlets?</li>
+            <ul><li>Basically, when the container sees the JSP, it eventually converts it into
+                    servlet which itself explains the relationship between JSP and servlets. </li></ul>
+            <li>How are JSP pages related to HTML? </li>
+            <ul><li>Any text outside the directives, scriptlets, or expressions are converted into HTML 
+                    , HTML part of JSP is used by the browser to render content.</li></ul>
+            <li>Give an example of a JSP scriptlet and show how it will look in the JSP servlet.</li>
+
+            <ul><li>
+
+                    JSP scriptlet:
+                    <%!
+                    public int add(int a, int b) {
+                    return a + b;
+                    }
+                    %>
+                </li>
+                <li>
+                    JSP servlet:
+                    public int add(int a, int b) {
+                    return a + b;
+                    }
+                </li>
+
+            </ul>
+            <li>Give an example of a JSP declaration and show how it will look in the JSP servlet.</li>
+            <ul><li><%!
+                    int i = 1;
+                   
+
+                    %></li>
+                <li>
+                    int i = 1;
+                    
+                </li>
+            </ul>
+            <li>Give an example of a JSP comment and show how it will look in the JSP servlet.</li>
+            <ul><li><%-- comment --%> this gets ignored in the JSP servlet</li></ul>
+            <li>Give an example of a JSP expression and show how it will look in the JSP servlet.</li>
+            <ul><li>Servlet container</li></ul>
+
+            <li>Give an example of a JSP directive and show how it will look in the JSP servlet.</li>
+            <ul><li><%@ page import="java.util.Date" %></li>
+
+                <li>import java.util.Date;</li></ul>
+            <li>Explain how an EL expression is evaluated.</li>
+            <ul><li>First the container looks at the EL expression. Then it check the page scope. If it is found it will be
+                it can be used for further purpose. Otherwise, the container keeps searching, until it founds it, all the way to 
+                application scope. The container ignores the expression if the search result is not positive.</li></ul>
+            <li>Explain how servlet attributes are involved in EL expressions.</li>
+            <ul><li>Servlet attributes are involved in EL expression by defining the scope.</li></ul>
+            <li>Explain how servlets and JSPs use request dispatch to interact.</li>
+            <ul><li>The request dispatch enables the client to send the same request and response
+                throughout and therefore the JSP basically receives the values at the level of the 
+                request scope from the servlet seamlessly</li></ul>
+
+
+        </ol>
+    </body>
+</html>
