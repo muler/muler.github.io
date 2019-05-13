@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>js timer quize</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <ol>
+            <li>What is the differencebetween the following 2 statements?setTimeout(booyah, 2000);setTimeout(booyah(), 2000); </li>
+            <ul><li>The first one calls booyah after 2s whereas in the second, the function booyah() is called immediately rather than waiting for 2 seconds</li></ul>
+            <li>What do the following 2 alerts display (answer without running the code)?
+                var myfunc = function(a, x) {return a * x;};<br>
+                var x = myfunc(2, 3);<br>
+                var y = myfunc;
+                alert(x);
+                alert(y(2,3));</li>
+            <ul><li>Both display a window alert with value 6 on it</li></ul>
+            <li>Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that says “BOOYAH!”
+                <br> setTimeout(booyah1, 2000);<br>setTimeout(booyah2(), 2000);</li>
+            <pre>
+                for the first one:
+                   function booyah1() {
+                     alert("BOOYAH!");
+                  } 
+
+                for the second one:
+                  function booyah2() {   
+                    return booyah1;
+                  } 
+            </pre>
+
+
+            <li>What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons for using it)?</li>
+            <ul><li>It is the best practice to separate the content of the web page from the behaviour or functionality. It fascilitates maintenability
+                    and quick error fixes.</li></ul>
+
+
+        </ol>
+    </body>
+</html>
