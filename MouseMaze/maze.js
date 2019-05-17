@@ -32,7 +32,7 @@ $(document).ready( function()
              if(control==1){
               //$('h2').css("color","red");
               $('h2').text("You are not in the maze.");
-               control=4; 
+               control=1; 
              }
          });
     });
